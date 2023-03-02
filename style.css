@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Varela;
+    src: url(Fonts/Varela-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(16,14,29,255);
+}
+h1{
+    color: white;
+    font-family: Poppins;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+#container{
+    background-color: rgba(30,33,58,255);
+    width: 45vw;    
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#container:hover{
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+.text{
+    font-family: Varela;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+   
+}
+#tempCalc{
+    padding: 20px 10px;
+    text-align: center;
+}
+input{
+    padding: 9px 0px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+#temp_diff{
+    padding: 13px 2px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    width: 200px;
+}
+.submit-btn button{
+    font-family: Varela;
+    font-size: 21px;
+    font-weight: 200;
+    background-color: #02b45ff5;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#resultContainer{
+    color: white;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin: 24px;
+}
+#resultContainer_kelTofah{
+    color: white;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin: 24px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1030px) {
+    #container{
+        width: auto;
+        height: 52vh;
+    }
+    #temp_diff{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 774px) {
+    .text{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 514px) {
+    #container{
+        width: 80vw;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 442px) {
+    .text{
+        font-size: 17px;
+        /* padding: 10px; */
+    }
+    h1{
+        font-size: 25px;
+    }
+    #resultContainer{
+        font-size: 28px;
+    }
+    #resultContainer_kelTofah{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .text{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 23px;
+    }
+    #resultContainer{
+        font-size: 25px;
+    }
+    #resultContainer_kelTofah{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 363px){
+    .text{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 21px;
+    }
+    #resultContainer{
+        font-size: 23px;
+    }
+    #resultContainer_kelTofah{
+        font-size: 23px;
+    }
+    #container{
+        width: 80vw;
+        height: 57vh;
+    }
+}
+@media screen and (max-width: 311px){
+    .text{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 19px;
+    }
+    #resultContainer{
+        font-size: 20px;
+    }
+    #resultContainer_kelTofah{
+        font-size: 20px;
+    }
+    input{
+        width: 150px;
+    }
+    #temp_diff{
+        width: 150px;
+    }
+    .submit-btn button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 277px){
+    h1{
+        font-size: 15px;
+    }
+    #resultContainer{
+        font-size: 18px;
+    }
+    #resultContainer_kelTofah{
+        font-size: 18px;
+    }
+}

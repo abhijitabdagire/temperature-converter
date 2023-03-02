@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" type="image/x-icon" href="temp.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <h1 id="title">Temperature Converter</h1>
+            <div id="container">
+                <div>
+                    <div class="text">Enter The Temperature you'd like to convert:)</div>
+                    <form id="tempCalc" onsubmit="calculateTemp(); return false">
+                        <input type="text" name="temp" id="temp" value="0">
+                        <select name="temp_diff" id="temp_diff">
+                            <option>Celsius</option>
+                            <option>Fahrenheit</option>
+                            <option>Kelvin</option>
+                        </select>
+                        <br>
+                        <div class="submit-btn">
+                            <button>Submit</button>
+                        </div>
+                        <div id="resultContainer">32 &deg;F</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
